@@ -118,7 +118,32 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"script.js":[function(require,module,exports) {
+var books = [{
+  tilte: 'Ny angano',
+  author: 'S.william',
+  genre: 'Fantasy',
+  numbers: 300,
+  status: read
+}, {
+  tilte: 'Ny vano',
+  author: 'Peter',
+  genre: 'Mystery',
+  numbers: 800,
+  status: not
+}, {
+  tilte: 'Ny rano',
+  author: 'jean Narivony',
+  genre: 'Design',
+  numbers: 100,
+  status: read
+}];
+var bookLibrary = document.querySelector('.book-library');
+var listOfBook = document.querySelector('.list-of-book'); // Generate the element using .map();
 
+var html = books.map(function (book) {
+  return "\n        <li>\n            <span>".concat(book.title, "</span>\n            <span>").concat(book.author, "</span>\n            <span>").concat(book.genre, "</span>\n            <span>").concat(book.numbers, "</span>\n            <span>").concat(book.status, "</span>\n        </li>\n    ");
+}).join(" ");
+listOfBook.innerHTML = html;
 },{}],"../../AppData/Roaming/npm/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';

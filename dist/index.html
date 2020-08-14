@@ -11,46 +11,66 @@
 
 <body>
     <header>
-        <h1>Library</h1>
+        <h1>
+            <img src="/onja_logo_transparent 1.66a0cf12.png" alt="">
+        </h1>
     </header>
-    <div class="shopping-list">
-        <h2>Add a book</h2>
-        <ul>
-            <li>
-                <form class="tilte" autocomplete="off">
-                    <label for="title"> Title
-						<input type="text" name="title" id="tilte-book" placeholder="Title" required="">
-					</label>
-                </form>
-            </li>
-            <li>
-                <form class="author" autocomplete="off">Author
-                    <input type="text" name="author" id="author-book" placeholder="Author" required="">
-                </form>
-            </li>
-            <li>
-                <form class="genre" autocomplete="off">Genre
-                    <label for="genre">
-						<input type="text" name="genre" id="genre-book" placeholder="Genre">
-					</label>
-                </form>
-            </li>
-            <li>
-                <form class="page-number" autocomplete="off">Number of pages
-                    <input type="text" name="pages" id="num-pg" placeholder="Numbers of pages" required="">
-                </form>
-            </li>
-            <li>
-                <form class="status" autocomplete="off">Status
-                    <input type="text" name="book" id="st-book" placeholder="Status" required="">
-                </form>
-            </li>
-            <li>
-                <button type="submit">Add</button>
-            </li>
-        </ul>
 
-        <script src="/script.75da7f30.js"></script>
-</div></body>
+    <section>
+        <div class="book-library">
+            <h2>Library</h2>
+            <nav>
+                <h3>Add a book</h3>
+                <ul class="form">
+                    <li>
+                        <form class="title" autocomplete="off">
+                            <label for="title"> Title</label>
+                            <input type="text" name="title" id="tilte-book" placeholder="Title" required="">
+                        </form>
+                    </li>
+                    <li>
+                        <form class="author" autocomplete="off">
+                            <label for="author">Athor</label>
+                            <input type="text" name="author" id="author-book" placeholder="Author" required="">
+                        </form>
+                    </li>
+                    <li>
+                        <form class="genre" autocomplete="off">
+                            <label for="genre">Genre</label>
+                            <input type="text" name="genre" id="genre-book" placeholder="Genre">
+                        </form>
+                    </li>
+                    <li>
+                        <form class="page-number" autocomplete="off">
+                            <label for="number-of-page">Number of pages</label>
+                            <input type="text" name="pages" id="num-pg" placeholder="Numbers of pages" required="">
+                        </form>
+                    </li>
+                    <li>
+                        <form class="status" autocomplete="off">
+                            <label for="status">Status</label>
+                            <input type="text" name="book" id="st-book" placeholder="Status" required="">
+                        </form>
+                    </li>
+                    <li>
+                        <button class="add-button" type="submit">Add</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <section>
+        <div class="list-form">
+            <form class="book-ontainer" autocomplete="off">
+                <input type="text" name="item" id="item" required="">
+            </form>
+
+            <ul class="lists-of-book"></ul>
+        </div>
+    </section>
+
+    <script src="/script.75da7f30.js"></script>
+</body>
 
 </html>
