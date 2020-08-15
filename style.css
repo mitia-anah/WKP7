@@ -11,8 +11,6 @@ h2 {
     font-weight: bold;
     font-size: 48px;
     line-height: 58px;
-    padding: 100px;
-    padding-block-start: 0;
     padding-block-end: 20px;
 }
 
@@ -20,25 +18,26 @@ h3 {
     font-weight: bold;
     font-size: 24px;
     line-height: 29px;
-    padding-inline-start: 50px;
-    text-align: start;
+    padding-block-end: 10px;
 }
 
 nav {
     background-color: #ffffff;
-    padding: 40px;
+    padding: 20px;
+    border-radius: 5px;
+    padding-inline-end: 2px;
 }
 
 .form {
+    background: white;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .book-library {
     filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.1));
     padding: 40px;
-    position: relative;
 }
 
 label {
@@ -47,20 +46,40 @@ label {
     padding: 5px;
 }
 
-input {
-    padding: 10px;
+ul>li input {
+    padding: 7px;
     border-radius: 5px;
     border-style: none;
     background-color: #F3F3F3;
 }
 
-input::placeholder:before {
-    content: "▼";
-    color: black;
-    width: 1rem;
-    display: block;
+.add-button {
+    background-color: #0083C3;
+    width: 86px;
+    border-radius: 6px;
+    padding: 5px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-block-start: 1.6rem;
 }
 
-.add-button {
-    background-color: blue;
+.list-form {
+    margin: 50px;
+    background-color: #F3F3F3;
+    padding-block-end: 100px;
+}
+
+.heading {
+    display: grid;
+    padding: 20px;
+    grid-template-columns: repeat(6, 1fr);
+    background-color: rgba(0, 127, 189, 0.03);
+    text-transform: uppercase;
+}
+
+.book-list {
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(6, 1fr);
+    border-bottom: 2px solid grey;
 }

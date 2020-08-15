@@ -24,32 +24,45 @@
                 <ul class="form">
                     <li>
                         <form class="title" autocomplete="off">
-                            <label for="title"> Title</label>
+                            <label for="title">Book title</label>
                             <input type="text" name="title" id="tilte-book" placeholder="Title" required />
                         </form>
                     </li>
                     <li>
                         <form class="author" autocomplete="off">
-                            <label for="author">Athor</label>
+                            <label for="author">Book author</label>
                             <input type="text" name="author" id="author-book" placeholder="Author" required />
                         </form>
                     </li>
                     <li>
                         <form class="genre" autocomplete="off">
-                            <label for="genre">Genre</label>
-                            <input type="text" name="genre" id="genre-book" placeholder="Genre" />
+                            <label for="genre">Book genre</label>
+                            <input list="browsers" name="genre" id="genre-book" placeholder="genre">
+                            <datalist id="browsers">
+                                <option value="Mystery">
+                                <option value="Thriller">
+                                <option value="Fiction">
+                                <option value="Non-fiction">
+                                <option value="Fantasy">
+                                <option value="Design">
+                                <option value="Memoirs">
+                            </datalist>
                         </form>
                     </li>
                     <li>
                         <form class="page-number" autocomplete="off">
-                            <label for="number-of-page">Number of pages</label>
+                            <label for="number-of-page">Book pages</label>
                             <input type="text" name="pages" id="num-pg" placeholder="Numbers of pages" required />
                         </form>
                     </li>
                     <li>
                         <form class="status" autocomplete="off">
-                            <label for="status">Status</label>
-                            <input type="text" name="book" id="st-book" placeholder="Status" required />
+                            <label for="status">Book status</label>
+                            <input list="browser" name="status" id="status-book" placeholder="Read">
+                            <datalist id="browser">
+                                <option value="Read">
+                                <option value="Not">
+                            </datalist>
                         </form>
                     </li>
                     <li>
@@ -62,10 +75,13 @@
 
     <section>
         <div class="list-form">
-            <form class="book-ontainer" autocomplete="off">
-                <input type="text" name="item" id="item" required />
-            </form>
-
+            <ul class="heading">
+                <li>Title</li>
+                <li>Author</li>
+                <li>Genre</li>
+                <li>Pages</li>
+                <li>Read</li>
+            </ul>
             <ul class="lists-of-book"></ul>
         </div>
     </section>
