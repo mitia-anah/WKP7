@@ -21,18 +21,19 @@ h3 {
     padding-block-end: 10px;
 }
 
-nav {
+form div {
     background-color: #ffffff;
-    padding: 20px;
     border-radius: 5px;
-    padding-inline-end: 2px;
+    padding-block-end: 20px;
 }
 
 .form {
     background: white;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    padding: 40px;
+    border-radius: 7px;
 }
 
 .book-library {
@@ -46,8 +47,8 @@ label {
     padding: 5px;
 }
 
-ul>li input {
-    padding: 7px;
+div input {
+    padding: 10px;
     border-radius: 5px;
     border-style: none;
     background-color: #F3F3F3;
@@ -55,18 +56,18 @@ ul>li input {
 
 .add-button {
     background-color: #0083C3;
-    width: 86px;
+    width: 100px;
     border-radius: 6px;
-    padding: 5px;
     color: #ffffff;
     text-transform: uppercase;
-    margin-block-start: 1.6rem;
+    margin: 1.5rem;
 }
 
 .list-form {
     margin: 50px;
     background-color: #F3F3F3;
     padding-block-end: 100px;
+    border-radius: 7px;
 }
 
 .heading {
@@ -83,3 +84,19 @@ ul>li input {
     grid-template-columns: repeat(6, 1fr);
     border-bottom: 2px solid grey;
 }
+
+.book-list input[type='checkbox']:checked+#bookTitle {
+    opacity: 0.5;
+}
+
+.remove::after {
+    content: " ";
+    background-image: url(./delete-24px.png);
+    background-repeat: no-repeat;
+}
+
+input[type=checkbox]:checked {
+    color: greenyellow;
+}
+
+;

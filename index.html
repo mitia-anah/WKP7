@@ -19,57 +19,43 @@
     <section>
         <div class="book-library">
             <h2>Library</h2>
-            <nav>
-                <h3>Add a book</h3>
-                <ul class="form">
-                    <li>
-                        <form class="title" autocomplete="off">
-                            <label for="title">Book title</label>
-                            <input type="text" name="title" id="tilte-book" placeholder="Title" required />
-                        </form>
-                    </li>
-                    <li>
-                        <form class="author" autocomplete="off">
-                            <label for="author">Book author</label>
-                            <input type="text" name="author" id="author-book" placeholder="Author" required />
-                        </form>
-                    </li>
-                    <li>
-                        <form class="genre" autocomplete="off">
-                            <label for="genre">Book genre</label>
-                            <input list="browsers" name="genre" id="genre-book" placeholder="genre">
-                            <datalist id="browsers">
-                                <option value="Mystery">
-                                <option value="Thriller">
-                                <option value="Fiction">
-                                <option value="Non-fiction">
-                                <option value="Fantasy">
-                                <option value="Design">
-                                <option value="Memoirs">
-                            </datalist>
-                        </form>
-                    </li>
-                    <li>
-                        <form class="page-number" autocomplete="off">
-                            <label for="number-of-page">Book pages</label>
-                            <input type="text" name="pages" id="num-pg" placeholder="Numbers of pages" required />
-                        </form>
-                    </li>
-                    <li>
-                        <form class="status" autocomplete="off">
-                            <label for="status">Book status</label>
-                            <input list="browser" name="status" id="status-book" placeholder="Read">
-                            <datalist id="browser">
-                                <option value="Read">
-                                <option value="Not">
-                            </datalist>
-                        </form>
-                    </li>
-                    <li>
-                        <button class="add-button" type="submit">Add</button>
-                    </li>
-                </ul>
-            </nav>
+            <h3>Add a book</h3>
+            <form class="form" autocomplete="off">
+                <div class="title">
+                    <label for="title">Book title</label>
+                    <input type="text" name="title" id="titleBook" placeholder="Title" required />
+                </div>
+                <div class="author">
+                    <label for="author">Book author</label>
+                    <input type="text" name="author" id="authorBook" placeholder="Author" required />
+                </div>
+                <div class="genre">
+                    <label for="genre">Book genre</label>
+                    <input list="browsers" name="genre" id="genreBook" placeholder="genre">
+                    <datalist id="browsers">
+                        <option value="Mystery">
+                        <option value="Thriller">
+                        <option value="Fiction">
+                        <option value="Non-fiction">
+                        <option value="Fantasy">
+                        <option value="Design">
+                        <option value="Memoirs">
+                    </datalist>
+                </div>
+                <div class="pages">
+                    <label for="number-of-page">Book pages</label>
+                    <input type="text" name="pages" id="pagesBook" placeholder="Numbers of pages" required />
+                </div>
+                <div class="status">
+                    <label for="status">Book status</label>
+                    <input list="browser" name="status" id="statusBook" placeholder="Read">
+                    <datalist id="browser">
+                        <option value="Read">
+                        <option value="Not">
+                    </datalist>
+                </div>
+                <button class="add-button" type="submit">Add</button>
+            </form>
         </div>
     </section>
 
