@@ -27,7 +27,7 @@ const bookLibrary = document.querySelector('.book-library');
 const listOfBook = document.querySelector('.lists-of-book');
 const submitBtn = document.querySelector('.add-button');
 
-// Generate the element using .map();
+
 const displayBooks = () => {
     const html = books.map(book =>
             `<li class="book-list">
@@ -39,7 +39,7 @@ const displayBooks = () => {
             ${book.status === "read" ? 'checked' : '' } 
             type="checkbox">
             <span>
-            <button class="remove" arial-label="Remove">x
+            <button class="remove" arial-label="Remove">sx
         </button>
             </span>
         </li>`)
